@@ -61,10 +61,10 @@
 <body>
 
 
-<div id="header">Totz's Page</div>
-<!--
-<div id="footer"></div>
--->
+  <div id="header"></div>
+  <!--
+  <div id="footer"></div>
+  -->
 
 <ul id="menu">
 	<li data-menuanchor="first"><a href="#first">Totz</a></li>

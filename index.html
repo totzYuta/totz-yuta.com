@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<title>Totz's Page</title>
+	<meta name="author" content="Totz Yuta" />
+	<meta name="description" content="" />
+	<meta name="keywords"  content="" />
+	<meta name="Resource-type" content="Document" />
+
+	
+	<link rel="stylesheet" type="text/css" href="jquery.multiscroll.css" />		
+	<link rel="stylesheet" type="text/css" href="examples.css" />		
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="vendors/jquery.easings.min.js"></script>
+	<script type="text/javascript" src="jquery.multiscroll.js"></script>
+
+	<script type="text/javascript">
+	 $(document).ready(function() {
+            $('#myContainer').multiscroll({
+            	sectionsColor: ['#FA8F32', '#02A8F5', '#11BE0B'],
+            	anchors: ['first', 'second', 'third'],
+            	menu: '#menu',
+            	css3: true,
+            	paddingTop: '70px',
+            	paddingBottom: '70px'
+            });
+        });
+    </script>
+
+
+    <style>
+    h1{
+    	color: #fff;
+    }
+    
+	/* Fixed header and footer.
+	* --------------------------------------- */
+	#header, #footer{
+		position:fixed;
+		height: 35px;
+		display:block;
+		width: 100%;
+		background: #333;
+		z-index:9;
+		text-align:center;
+		color: #f2f2f2;
+		padding: 20px 0 0 0;
+	}
+	
+	#header{
+		top:0px;
+	}
+	#footer{
+		bottom:0px;
+	}
+
+	</style>
+</head>
+<body>
+
+
+  <div id="header"></div>
+  <!--
+  <div id="footer"></div>
+  -->
+
+<ul id="menu">
+	<li data-menuanchor="first"><a href="#first">Totz</a></li>
+	<li data-menuanchor="second"><a href="#second">SNS</a></li>
+	<li data-menuanchor="third"><a href="#third">Projects</a></li>
+</ul>
+
+<div id="myContainer">
+
+  <div class="ms-left">
+
+		<div class="ms-section" id="left1">
+			<h1>Totz</h1>
+    </div>
+
+		<div class="ms-section" id="left2">
+			<h1>SNS</h1>
+		</div>
+
+		<div class="ms-section" id="left3">
+			<h1>Projects</h1>
+		</div>
+
+	</div>
+	
+  <div class="ms-right">
+
+		<div class="ms-section" id="right1">
+      <br><br><br>
+      <p>I'm a lover of <b>web</b> and <b>coffee</b>.</p><br><br>
+      <p>Was staying in <b>Uganda</b> for a year and making <b>web-service</b>, <b>iOS app</b>, <b>drums</b> and <b>coffee beans</b>. </p><br><br>
+      <p>I'm writing/learning <b>CSS</b>, <b>PHP</b>, <b>Ruby</b> and <b>swift</b> (by <b>Vim</b> :^} ) </p><br><br>
+      <p>Internship at <b>Cyber Agent</b>, <b>Recruit</b>×<b>Cookpad</b> in 2014 and <b>Life is Tech! Leaders</b> (Fourth)</p><br><br>
+		</div>
+
+		<div class="ms-section" id="right2">
+      <p>Github: <a href="https://github.com/totzYuta" target="_blank">totzYuta</a></p>
+      <p>Facebook: <a href="https://www.facebook.com/yuta.totsuka424" target="_blank">Yuta Totsuka</a></p>
+      <p>Twitter (English): <a href="https://www.twitter.com/yutatotz" target="_blank">@yutaTotz</a></p>
+      <p>Twitter (Japanese): <a href="https://www.twitter.com/totu_iy" target="_blank">@totu_iy</a></p>
+      <br>
+      <p>Blog (En): <a href="http://totzyuta.github.io/" target="_blank">Coding Diary of Totz</a>
+      <p>Blog (Ja): <a href="http://coding-diary-of-totz.herokuapp.com/" target="_blank">Coding Diary of Totz</a>
+    </div>
+
+		<div class="ms-section" id="right3">
+      <br><br><br>
+      <p><strong><a href="https://github.com/totzYuta/twit" target="_blank">twit for terminal</a></strong><br>CLI Tool to Tweet from Terminal<br>(Ruby)</p><br><br>
+      <p><strong><a href="https://github.com/totzYuta/CoffeeNote_swift" target="_blank">CoffeeNote</a></strong><br>iOS App to Create Notebook of Coffee Log<br>(swift)</p><br><br>
+      <p><strong><a href="http://jobmake.jp" target="_blank">jobmake.jp</a></strong><br>Web-based Service of Recruiting<br>(PHP)</p><br><br>
+    </div>
+
+	</div>	
+</div>
+
+</body>
+</html>
